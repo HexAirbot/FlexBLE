@@ -3,24 +3,28 @@ FlexBLE
 
 The firmware here is only for developers and hackers who are initerested in the BLE module of Flexbot.
 
-Now, the firmware 'FlexBLE_1.0.0_cc254x.hex' is not compitable with the released apps(Flexbot 1.0.3 app for Android, Flexbot 1.0.1 app for for iOS). Instead, you can use the code in branch dev_v2 of HexNanoController_iOS to test with the firmware.
+Now, the firmware 'FlexBLE_1.0.0_cc254x.hex' is not compitable with the released apps(Flexbot 1.0.3 app for Android, Flexbot 1.0.1 app for for iOS). 
+
+Instead, you can use the code in branch dev_v2 of HexNanoController_iOS to test with the firmware.
 
 ## There are three usable characteristics of the BLE firmware
 
-char      address   value length    access                        more info
-CHAR1     0xFFE1       6           write without response      use for rc channels(app-->BLE module)
-CHAR2     0xFFE2       18          write without response      use for rx(send data from the app to the rx port of the BLE module)
-CHaR4     0xFFE4       20          notify                      use for tx(receive data from the tx port of the BLE module)
+char,      ddress,   value length,    access,                        more info
+ 
+CHAR1,     0xFFE1,       6,           write without response,      use for rc channels(app-->BLE module)
+
+CHAR2,     0xFFE2,       18,          write without response,      use for rx(send data from the app to the rx port of the BLE module)
+
+CHaR4,     0xFFE4,       20,          notify,                      use for tx(receive data from the tx port of the BLE module)
 
 
-How to load Load the hex file onto the TI CC254x
-==========
+## How to load Load the hex file onto the TI CC254x
 
-## You Will Need
+**You Will Need**
 * [TI CC-Debugger](http://www.ti.com/tool/cc-debugger) (must be purchased)
 * [TI SmartRF Flash Programmer](http://www.ti.com/tool/flash-programmer) (free)
 
-## Steps
+**Steps**
 * Connect the CC-Debugger 
   * To your computer via USB
   * To the Flexbot BLE module,only five wires connections are needed
