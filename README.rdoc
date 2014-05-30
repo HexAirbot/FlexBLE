@@ -6,7 +6,7 @@ Now, the firmware 'FlexBLE_1.0.0_cc254x.hex' is not compitable with the released
 
 Instead, you should use the code in branch dev_v2 of HexNanoController_iOS to test with the firmware.
 
-====There is a sercvic at 0xFFE0 of the BLE firware and there are three usable characteristics of the service.
+====There is a sercvic at 0xFFE0 of the BLE firmware and there are three usable characteristics of the service.
   # +--------+---------+--------------+-----------------------+----------------------------------------+
   # | char   | address | value length |       access          |    more info                           |
   # +--------+---------+--------------+-----------------------+----------------------------------------+
